@@ -1,23 +1,35 @@
 // trigger to play music in the background with sweetalert
-window.addEventListener('load', () => {
-    Swal.fire({
-        title: 'Hi Madam, wanna play your fav music??',
-        icon: 'warning',
-        showCancelButton: false,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.querySelector('.song').play();
-            animationTimeline();
-        } else {
-            animationTimeline();
-        }
-    });
+window.addEventListener("load", () => {
+  Swal.fire({
+    title: "Hi Madam, wanna play your fav music??",
+    imageUrl:
+      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ZtN28yeDNkcTdybGthaTBvcWF4ZHZlbHo2Z3dzOTZoenR0aXV2ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/B22qoKzmGKsOfgJQj7/giphy.gif",
+    imageWidth: 200,
+    imageHeight: 200,
+    imageAlt: "Doge Image",
+    showCancelButton: false,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes",
+    cancelButtonText: "No",
+    didOpen: () => {
+      const img = document.querySelector(".swal2-image");
+      if (img) {
+        img.style.width = "200px";
+        img.style.height = "200px";
+        img.style.borderRadius = "50%";
+        img.style.objectFit = "cover"; // Ensures full coverage inside circle
+      }
+    },
+  }).then((result) => {
+    if (result.isConfirmed) {
+      document.querySelector(".song").play();
+      animationTimeline();
+    } else {
+      animationTimeline();
+    }
+  });
 });
-
 
 // animation timeline
 const animationTimeline = () => {
