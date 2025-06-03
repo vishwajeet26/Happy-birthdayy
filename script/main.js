@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     showCancelButton: false,
     confirmButtonColor: "#3085d6",
     cancelButtonColor: "#d33",
-    confirmButtonText: "Yes",
+    confirmButtonText: "Yes :)",
     cancelButtonText: "No",
     didOpen: () => {
       const img = document.querySelector(".swal2-image");

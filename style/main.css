@@ -105,6 +105,8 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
+  object-fit: contain;
+  
   /* height: auto; */
 }
 
@@ -235,6 +237,7 @@ body {
 @media screen and (max-height: 800px) {
   .six .hat {
     left: 37%;
+    
   }
 }
 
@@ -247,6 +250,7 @@ body {
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     left: 32%;
+    
   }
 }
 
@@ -273,7 +277,7 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
+    top: -150px;
     width: 50px;
   }
 
