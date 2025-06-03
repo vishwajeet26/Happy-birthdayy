@@ -114,7 +114,7 @@ body {
   left: 41.5%;
   position: absolute;
   /* transform: scale(0.1); */
-  top: -35%;
+  top: -200px;
   width: 80px;
 }
 
@@ -226,6 +226,17 @@ body {
   cursor: pointer;
   z-index: 3;
 }
+.wish h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 50%
+}
+
+.wish-text  {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
@@ -286,11 +297,13 @@ body {
   }
 
   .wish h5 {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
+    width: 100%;
   }
 
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
 }
